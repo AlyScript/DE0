@@ -1,0 +1,9 @@
+module blink(
+    BUTTON,
+    LEDG
+);
+    input [2:0] BUTTON;
+    output [9:0] LEDG;
+
+    assign LEDG[0] = BUTTON[0];
+endmodule
