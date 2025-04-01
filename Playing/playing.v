@@ -1,12 +1,12 @@
 module playing(
-    input   clk,		    // 50 mhz
+    input   clk,		            // 50 mhz
     input   i_Switch_1,    
     output  o_LED_1
 );
 
-    // Internal Signal / Registers
+    // Internal Signals / Registers here
 	reg r_LED_1;
-	reg r_Switch_1;         // We use this to detect falling edge of the switch
+	reg r_Switch_1;                 // We use this to detect falling edge of the switch
 
 	always @ (posedge clk)
 	begin
